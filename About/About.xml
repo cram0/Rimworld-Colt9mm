@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Colt 9mm</name>
+	<name>[cram] Colt 9mm SMG</name>
 	<author>cram</author>
 	<packageId>cram.colt9mm</packageId>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>
-	Adds a Colt 9mm SMG to RimWorld.
-	</description>
+	<description>Adds a Colt 9mm SMG to RimWorld.
+	Acts like an SMG, looks like an M16, the best of both world.</description>
 </ModMetaData>
