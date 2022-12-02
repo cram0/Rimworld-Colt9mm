@@ -57,9 +57,86 @@
         <warmupTime>0.5</warmupTime>
         <range>20</range>
         <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
         <soundCast>Shot_AssaultRifle</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>ShortShots</li>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+  </ThingDef>
+
+
+  <!--===== Colt 9mm SD =====-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Colt_9mm_SD</defName>
+    <label>Colt 9mm SD</label>
+    <description>The Colt 9mm SMG, also known as the Colt Model 635 or Colt M635, is a 9x19mm Parabellum submachine gun manufactured by Colt, based on the M16 rifle.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Colt_9mm_SD</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2.1</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.49</AccuracyMedium>
+      <AccuracyLong>0.29</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Colt9mm</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>20</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Colt_9mm_SD</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
